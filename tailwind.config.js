@@ -4,5 +4,5 @@ export default {
   theme: {
     class: {},
   },
-  plugins: [],
+  plugins: [require("@catppuccin/tailwindcss")],
 }
