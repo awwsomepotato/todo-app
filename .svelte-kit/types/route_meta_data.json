@@ -1,0 +1,9 @@
+{
+	"/": [
+		"src/routes/+page.server.ts"
+	],
+	"/settings": [],
+	"/to-do": [
+		"src/routes/to-do/+page.server.ts"
+	]
+}
