@@ -1,6 +1,6 @@
 <script lang="ts">
     import "../app.css";
-    import { Cog, Home, CopyCheck, Moon, Sun } from 'lucide-svelte';
+    import { Cog, Home, ListTodo, Moon, Sun } from 'lucide-svelte';
     let dark: boolean = true
     $: console.log(`dark is ${dark}`)
 </script>
@@ -15,7 +15,7 @@ class="flex flex-col md:flex-row h-screen w-screen items-center text-subtext0">
                 <p class="text-sm self-center">Home</p>
             </a>
             <a class="nav-button" href='/to-do'>        
-                <CopyCheck class="nav-icon text-inherit" />
+                <ListTodo class="nav-icon text-inherit" />
                 <p class="text-sm self-center text-inherit">Todo</p>
             </a>
         </div>
