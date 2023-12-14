@@ -30,18 +30,18 @@
         <div class="flex flex-col p-2 w-4/5 items-center">
             <div class="task-holder">
                 <div class="w-full flex flex-row justify-between p-1 items-center">
-                    <input class="w-1/2 rounded-md dark:bg-purple-700 p-1"
+                    <input class="w-1/2 rounded-md bg-surface2 opacity-90 text-text text-opacity-100 p-1"
                     bind:value={titleInput}/>
                     <div class="flex flex-row p-2">
                     <p>{date}</p>
-                    <button class="bg-pink-600 rounded-full w-6.5 h-6.5"
+                    <button class="bg-blue rounded-full w-6.5 h-6.5"
                     on:click={taskSubmit}>
                         <Plus class="w-6.5 h-6.5"/>
                     </button>
                     </div>
                 </div>
                 <div class="w-full p-1">
-                    <input class="w-full rounded-md dark:bg-purple-700   p-1"
+                    <input class="w-full rounded-md bg-surface2 opacity-90 text-text text-opacity-100 p-1"
                     bind:value={taskInput}/>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                     <h4 class="p-1"
                     >{task[1]}</h4>
                 </div>
-                <p class="dark:bg-purple-700 m-1 p-1 rounded-md"
+                <p class="bg-surface1 m-1 p-1 rounded-md"
                 >{task[2]}</p>
                 </div>
             {/each}
@@ -68,7 +68,7 @@
                     <h4 class="p-1"
                     >{task[1]}</h4>
                 </div>
-                <p class="dark:bg-purple-700 m-1 p-1 rounded-md opacity-75"
+                <p class="bg-surface1 m-1 p-1 rounded-md opacity-75"
                 >{task[2]}</p>
                 </div>
             {/each}
@@ -79,6 +79,6 @@
 
 <style lang="postcss">
     .task-holder {
-        @apply dark:bg-purple-800 m-1 p-1 rounded-md w-full
+        @apply bg-surface0 m-1 p-1 text-text rounded-md w-full
     }
 </style>
