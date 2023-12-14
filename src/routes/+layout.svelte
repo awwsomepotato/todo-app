@@ -1,6 +1,6 @@
 <script lang="ts">
     import "../app.css";
-    import { Cog, Home, ListTodo, Moon, Sun } from 'lucide-svelte';
+    import { Cog, Home, ListTodo, Info } from 'lucide-svelte';
     let dark: boolean = true
     $: console.log(`dark is ${dark}`)
 </script>
@@ -20,13 +20,19 @@ class="flex flex-col md:flex-row h-screen w-screen items-center text-subtext0">
             </a>
         </div>
         <div class="nav-right-contaner"> 
+            <!--
             <a href="/settings" class="nav-button">
                 <Cog class="nav-icon"/>
                 <p class="text-sm self-center">Settings</p>
             </a>
+            -->
+            <a href="/info" class="nav-button">
+                <Info class="nav-icon"/>
+                <p class="text-sm self-center">Info</p>
+            </a>
         </div>
     </header>
-    <div class="w-full h-full flex flex-col p-3">
+    <div class="w-full h-full flex flex-col sm:p-3">
         <slot/>
     </div>
 </div>

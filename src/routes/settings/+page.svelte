@@ -20,17 +20,11 @@
         <h1 class=""
         >Theme</h1>
         <Palette/>
-        <div class="flex flex-row">     
+        <div class="flex flex-row">
             {#each themes as theme}
-            <button on:click={themeSwitch}
-            class="p-1 m-2 flex flex-col items-center">
-                {#if theme[0] == true}
-                    <h3>dark</h3>
-                {:else}
-                    <h3>light</h3>
-                {/if}
-                <h3>{theme[1]}</h3>
-            </button>
+                <div class="m-2">
+                <div>{theme}</div>
+                </div>
             {/each}
         </div>
     </div>

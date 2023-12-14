@@ -2,6 +2,7 @@
 	"/": [
 		"src/routes/+page.server.ts"
 	],
+	"/info": [],
 	"/settings": [],
 	"/to-do": [
 		"src/routes/to-do/+page.server.ts"

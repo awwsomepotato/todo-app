@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import { PlusCircle, Check, CheckCircle2 } from 'lucide-svelte';
 
     let taskInput = "description goes here"
@@ -20,8 +20,15 @@
         titleInput = "title goes here"
         date = "Dec 6"
     }
-    function taskComplete() {
-
+    function taskComplete (task: any) {
+        /*
+        console.log(task);
+        let taskPos = tasks.indexOf(task);
+        console.log(taskPos);
+        delete tasks[taskPos];
+        console.log(tasks);
+        tasks = tasks;
+        */
     }
 </script>
 
@@ -30,7 +37,7 @@
         To-Do App
     </h1>
     <div class="flex flex-col items-center w-4/5 max-w-screen-md min-w-fit">
-        <div class="flex flex-col p-2 w-4/5 items-center">
+        <div class="flex flex-col p-2 w-4/5 min-w-[375px] items-center">
             <div class="task-holder">
                 <div class="flex flex-row justify-between items-center pl-1 pt-1">
                     <input class="w-1/2 rounded-md bg-surface2 opacity-90 text-text text-opacity-100 p-1"
@@ -39,7 +46,7 @@
                     <p class="p-1">{date}</p>
                     <button class="rounded-full w-6.5 h-6.5"
                     on:click={taskSubmit}>
-                        <PlusCircle class="w-6.5 h-6.5 text-subtext"/>
+                        <PlusCircle class="w-6.5 h-6.5 text-subtext  hover:text-green"/>
                     </button>
                     </div>
                 </div>
@@ -58,8 +65,8 @@
                         <h4 class="p-1"
                         >{task[1]}</h4>
                         <button class="rounded-full w-6.5 h-6.5"
-                        on:click={taskComplete}>
-                            <CheckCircle2 class="w-6.5 h-6.5 text-subtext"/>
+                        on:click={taskComplete(task)}>
+                            <CheckCircle2 class="w-6.5 h-6.5 text-subtext hover:text-green"/>
                         </button>
                         </div>
                     </div>
