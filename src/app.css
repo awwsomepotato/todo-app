@@ -4,7 +4,7 @@
 
 
 .navbar {
-    @apply shadow-md mx-2 my-1 flex flex-row lg:flex-col dark:bg-purple-800 justify-between 
+    @apply shadow-md mx-2 my-1 flex flex-row lg:flex-col bg-surface0 justify-between 
     rounded-3xl dark:text-slate-200  h-fit w-[96vw];
 }
 .nav-left-contaner {

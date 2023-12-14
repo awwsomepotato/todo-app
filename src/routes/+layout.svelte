@@ -7,16 +7,16 @@
 
 <div id="everything"
 class:dark={dark}
-class="flex flex-col md:flex-row h-screen w-screen items-center">
+class="flex flex-col md:flex-row h-screen w-screen items-center text-subtext0">
     <header class="navbar">
         <div class="nav-left-contaner">
             <a class="nav-button group" href='/'> 
                 <Home class="nav-icon" />
                 <p class="text-sm self-center">Home</p>
             </a>
-            <a class="nav-button" href='/to-do'> 
-                <CopyCheck class="nav-icon" />
-                <p class="text-sm self-center">Todo</p>
+            <a class="nav-button" href='/to-do'>        
+                <CopyCheck class="nav-icon text-inherit" />
+                <p class="text-sm self-center text-inherit">Todo</p>
             </a>
         </div>
         <div class="nav-right-contaner"> 

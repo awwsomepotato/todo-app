@@ -4,5 +4,9 @@ export default {
   theme: {
     class: {},
   },
-  plugins: [require("@catppuccin/tailwindcss")],
+  plugins: [
+    require("@catppuccin/tailwindcss")({
+      defaultFlavour: "macchiato",
+    }),
+  ],
 }
