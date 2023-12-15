@@ -4,7 +4,7 @@
 	],
 	"/info": [],
 	"/settings": [],
-	"/to-do": [
-		"src/routes/to-do/+page.server.ts"
+	"/todo": [
+		"src/routes/todo/+page.server.ts"
 	]
 }

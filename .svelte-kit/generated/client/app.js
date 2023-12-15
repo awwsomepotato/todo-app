@@ -15,7 +15,7 @@ export const dictionary = {
 		"/": [~2],
 		"/info": [3],
 		"/settings": [4],
-		"/to-do": [~5]
+		"/todo": [~5]
 	};
 
 export const hooks = {
