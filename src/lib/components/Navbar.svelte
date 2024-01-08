@@ -1,16 +1,13 @@
 <script lang="ts">
-    import { Cog, Home, ListTodo, Info } from 'lucide-svelte';
+    import { Home, ListTodo, Info } from 'lucide-svelte';
     import { page } from '$app/stores';
     $: currentPage = $page.url.pathname
-    if ($page.url.pathname == '/') {
-
-    }
 </script>
 
 
 <header class="navbar">
     <div class="nav-left-contaner">
-        <a class="nav-button group {'/' === currentPage ? 'active' : ''} " href='/'>
+        <a class="nav-button {'/' === currentPage ? 'active' : ''} " href='/'>
             <Home class="place-self-center w-6 h-6 md:w-7 md:h-7"/>
             <p class="text-sm self-center">Home</p>
         </a>    
@@ -26,7 +23,7 @@
             <p class="text-sm self-center">Settings</p>
         </a>
         -->
-        <a href="/info" class="nav-button {'/info' === currentPage ? 'active' : ''}">
+        <a class=" nav-button {'/info' === currentPage ? 'active' : ''} " href="/info">
             <Info class="place-self-center w-6 h-6 md:w-7 md:h-7"/>
             <p class="text-sm self-center">Info</p>
         </a>
